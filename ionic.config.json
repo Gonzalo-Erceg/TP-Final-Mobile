@@ -1,0 +1,7 @@
+{
+  "name": "TPFinalMovile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
