@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Example</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-input
+    [(ngModel)]="search"
+    placeholder="Buscar"
+    (ionInput)="filtrarUsuarios()"
+  ></ion-input>
+  <ion-button (click)="ocultarMenor5()">Ocultar</ion-button>
+  <item-card
+    *ngFor="let data of DatosFilter"
+    [data]="data"
+    [ejemplo]="'algo'"
+  ></item-card>
+  <span>Contador: {{contador}}</span>
+  <h1 *ngIf="err">{{err.message}}</h1>
+</ion-content>

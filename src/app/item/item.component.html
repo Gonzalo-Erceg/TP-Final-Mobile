@@ -1,0 +1,21 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{ data.id }} - {{ data.name }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Email: {{ data.email }} <br />
+    Username: {{ data.username }}
+  </ion-card-content>
+
+  <ion-button (click)="ShowAlert(true)">Detalle</ion-button>
+  {{ ejemplo }}
+  <ion-alert
+    [isOpen]="abierto"
+    header="{{ data.name }}"
+    message="{{ data.phone }} - {{ data.address.city }} - {{
+      data.company.name
+    }} - {{ data.website }}"
+    (didDismiss)="ShowAlert(false)"
+  ></ion-alert>
+</ion-card>
