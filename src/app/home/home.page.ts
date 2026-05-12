@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import {
   IonHeader,
   IonToolbar,
@@ -21,5 +22,6 @@ import { RouterModule } from '@angular/router';
   ],
 })
 export class HomePage {
-  constructor() {}
+    constructor() {}
+
 }
