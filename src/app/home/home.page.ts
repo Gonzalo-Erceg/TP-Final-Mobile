@@ -1,3 +1,4 @@
+import { TypeBadgeComponent } from '../components/type-badge/type-badge.component';
 import { Component } from '@angular/core';
 
 import {
@@ -13,13 +14,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   imports: [
-    IonButton,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    RouterModule,
-  ],
+  IonButton,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  RouterModule,
+  TypeBadgeComponent,
+],
 })
 export class HomePage {
     constructor() {}
