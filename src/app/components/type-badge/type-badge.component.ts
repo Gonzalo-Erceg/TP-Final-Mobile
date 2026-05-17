@@ -32,8 +32,34 @@ export class TypeBadgeComponent {
     steel: '#B8B8D0',
   };
 
+readonly TEXT_COLORS: Record<string, string> = {
+  normal: '#000000',
+  fire: '#000000',
+  grass: '#000000',
+  electric: '#000000',
+  psychic: '#000000',
+  ice: '#000000',
+  flying: '#000000',
+  ground: '#000000',
+  rock: '#000000',
+  bug: '#000000',
+  steel: '#000000',
+  fairy: '#000000',
+
+  water: '#ffffff',
+  fighting: '#ffffff',
+  poison: '#ffffff',
+  ghost: '#ffffff',
+  dark: '#ffffff',
+  dragon: '#ffffff',
+};
+
   get backgroundColor(): string {
     return this.TYPE_COLORS[this.type?.toLowerCase()] || '#777';
   }
+
+  get textColor(): string {
+  return this.TEXT_COLORS[this.type.toLowerCase()] || '#ffffff';
+}
 
 }
